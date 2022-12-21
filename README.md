@@ -20,3 +20,11 @@ Updates Dynamic DNS for Google Domains. Change values in script while using. Wil
 ### Rsync Source Destination Recursively with delete source and progress
 
 `rsync --progress --remove-source-files -r ${source} ${destination}`
+
+### Extract tar file fast with pigz
+
+`pigz -dc myfile.tar.gz | pv | tar xf -`
+
+### Delete folder fast with rsync
+
+`mkdir empty/ && rsync -a --delete empty/ folder_to_delete/`
