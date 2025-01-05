@@ -28,3 +28,7 @@ Updates Dynamic DNS for Google Domains. Change values in script while using. Wil
 ### Delete folder fast with rsync
 
 `mkdir empty/ && rsync -a --delete empty/ folder_to_delete/`
+
+### Search for string in files in a directory using grep
+
+`grep -rnw './dir' -e 'string_to_find'`
