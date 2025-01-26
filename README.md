@@ -32,3 +32,9 @@ Updates Dynamic DNS for Google Domains. Change values in script while using. Wil
 ### Search for string in files in a directory using grep
 
 `grep -rnw './dir' -e 'string_to_find'`
+
+### Fast huggingface download
+
+`pip install "huggingface_hub[hf_transfer]"`
+
+`HF_HUB_ENABLE_HF_TRANSFER=1 huggingface-cli download --repo-type model model-repo-path`
