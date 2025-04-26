@@ -38,3 +38,7 @@ Updates Dynamic DNS for Google Domains. Change values in script while using. Wil
 `pip install "huggingface_hub[hf_transfer]"`
 
 `HF_HUB_ENABLE_HF_TRANSFER=1 huggingface-cli download --repo-type model model-repo-path`
+
+### Fast file transfer over ssh with tar
+
+`tar -cf - $source_directory | ssh user@host "tar -xf - -C $destination_directory"`
